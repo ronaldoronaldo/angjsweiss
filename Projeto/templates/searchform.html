@@ -1,0 +1,22 @@
+<form class="navbar-form navbar-left" >
+
+	<div class="form-group" id="aumentaform">
+		<input type="text"
+		       class="form-control"
+		       id="name"
+		       ng-model="contacts.search"
+		       ng-model-options="{ debounce: 300 }"
+		       placeholder="Pesquise por qualquer info"
+				/>
+	</div >
+
+	<div class="form-group" >
+		<select class="form-control"
+		        ng-model="contacts.ordering" >
+			<option value="name" >Nome (CRE)</option >
+			<option value="-name" >Nome (DEC)</option >
+			<option value="email" >Email (CRE)</option >
+			<option value="-email" >Email (DEC)</option >
+		</select >
+	</div >
+</form >
